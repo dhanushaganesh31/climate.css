@@ -1,0 +1,22 @@
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    // Define some colors
+    char* primaryColor = "#3498db";
+    char* secondaryColor = "#f1c40f";
+
+    // Define some font sizes
+    int fontSizeSmall = 12;
+    int fontSizeLarge = 24;
+
+    // Generate CSS styles
+    printf("/* Generated CSS styles */\n");
+    printf(".primary { background-color: %s; }\n", primaryColor);
+    printf(".secondary { background-color: %s; }\n", secondaryColor);
+    printf(".small-text { font-size: %dpx; }\n", fontSizeSmall);
+    printf(".large-text { font-size: %dpx; }\n", fontSizeLarge);
+
+    return 0;
+}
